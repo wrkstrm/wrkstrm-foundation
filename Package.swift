@@ -5,13 +5,13 @@ import PackageDescription
 // MARK: - Configuration Service
 
 Package.Inject.local.dependencies = [
-  .package(name: "common-log", path: "../common/domain/system/common-log"),
-  .package(name: "WrkstrmMain", path: "../WrkstrmMain"),
+  .package(name: "common-log", path: "../../../common/domain/system/common-log"),
+  .package(name: "wrkstrm-main", path: "../wrkstrm-main"),
 ]
 
 Package.Inject.remote.dependencies = [
   .package(url: "https://github.com/wrkstrm/common-log.git", from: "3.0.0"),
-  .package(url: "https://github.com/wrkstrm/WrkstrmMain.git", from: "2.4.0"),
+  .package(name: "wrkstrm-main", path: "../wrkstrm-main"),
 ]
 
 // MARK: - Package Declaration
@@ -27,7 +27,7 @@ let package = Package(
     .watchOS(.v9),
   ],
   products: [
-    .library(name: "WrkstrmFoundation", targets: ["WrkstrmFoundation"])
+    .library(name: "WrkstrmFoundation", targets: ["WrkstrmFoundation"]),
   ],
   dependencies: Package.Inject.shared.dependencies + [
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.4.0")
@@ -37,7 +37,7 @@ let package = Package(
       name: "WrkstrmFoundation",
       dependencies: [
         .product(name: "CommonLog", package: "common-log"),
-        .product(name: "WrkstrmMain", package: "WrkstrmMain")
+        .product(name: "WrkstrmMain", package: "wrkstrm-main")
       ],
       swiftSettings: Package.Inject.shared.swiftSettings,
     ),
