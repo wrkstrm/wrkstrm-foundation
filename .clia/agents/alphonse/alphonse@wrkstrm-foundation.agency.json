@@ -1,0 +1,45 @@
+{
+  "entries" : [
+    {
+      "summary" : "Seed: Commissioned persona and guardrails.",
+      "title" : "Agency Log — WrkstrmFoundation (Alphonse)"
+    }
+  ],
+  "links" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Use CommonShell/CommonProcess; avoid Foundation.Process. CommonLog is the logging surface."
+          ]
+        }
+      ]
+    }
+  ],
+  "owners" : [
+    "^codex@todo3",
+    "^dott@todo3",
+    "^carrie@todo3"
+  ],
+  "schemaVersion" : "0.4.0",
+  "slug" : "wrkstrm-foundation-alphonse",
+  "sourcePath" : "code/mono/apple/spm/universal/domain/system/wrkstrm-foundation/.clia/agents/alphonse/alphonse@wrkstrm-foundation.agency.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "Agency — WrkstrmFoundation (Alphonse)",
+  "updated" : "2026-01-25T00:00:00Z"
+}

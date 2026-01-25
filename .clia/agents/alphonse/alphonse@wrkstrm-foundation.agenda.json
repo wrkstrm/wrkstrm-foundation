@@ -1,0 +1,67 @@
+{
+  "agent" : {
+    "role" : "Alphonse"
+  },
+  "horizons" : [
+    {
+      "key" : "near",
+      "label" : "Near-Term"
+    },
+    {
+      "key" : "mid",
+      "label" : "Mid-Term"
+    },
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    }
+  ],
+  "links" : [
+
+  ],
+  "milestones" : [
+    {
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Audit dependencies and replace WrkstrmLog with CommonLog across examples and tests."
+    },
+    {
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Expand DocC coverage with stability guarantees and migration notes."
+    },
+    {
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Establish Linux/macOS CI and publish an OSS-ready 1.x roadmap."
+    }
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    }
+  ],
+  "owners" : [
+    "^codex@todo3",
+    "^dott@todo3",
+    "^carrie@todo3"
+  ],
+  "principles" : [
+    "CLIA-first: typed adapters; CommonShell/CommonProcess only.",
+    "CommonLog is the logging surface; remove legacy WrkstrmLog.",
+    "No secrets in logs."
+  ],
+  "schemaVersion" : "0.4.0",
+  "slug" : "wrkstrm-foundation-alphonse",
+  "sourcePath" : "code/mono/apple/spm/universal/domain/system/wrkstrm-foundation/.clia/agents/alphonse/alphonse@wrkstrm-foundation.agenda.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "AGENDA — WrkstrmFoundation (Alphonse)",
+  "updated" : "2026-01-25T00:00:00Z"
+}

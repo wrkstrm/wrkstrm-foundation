@@ -9,11 +9,9 @@ let useLocalDeps: Bool = {
   return v == "1" || v == "true" || v == "yes"
 }()
 
-func localOrRemote(
-  name: String, path: String, url: String, requirement: Package.Dependency.Requirement
-) -> Package.Dependency {
+func localOrRemote(name: String, path: String, url: String, from version: Version) -> Package.Dependency {
   if useLocalDeps { return .package(name: name, path: path) }
-  return .package(url: url, requirement)
+  return .package(url: url, from: version)
 }
 
 let sharedSwiftSettings: [SwiftSetting] =
@@ -37,12 +35,12 @@ let package = Package(
       name: "common-log",
       path: "../../../common/domain/system/common-log",
       url: "https://github.com/wrkstrm/common-log.git",
-      requirement: .upToNextMajor(from: "3.0.0")),
+      from: "3.0.0"),
     localOrRemote(
       name: "wrkstrm-main",
       path: "../wrkstrm-main",
       url: "https://github.com/wrkstrm/wrkstrm-main.git",
-      requirement: .upToNextMajor(from: "3.0.0")),
+      from: "3.0.0"),
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.4.0"),
   ],
   targets: [
