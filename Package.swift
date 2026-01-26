@@ -21,7 +21,7 @@ let package = Package(
   name: "WrkstrmFoundation",
   platforms: [
     .iOS(.v16),
-    .macOS(.v14),
+    .macOS(.v15),
     .macCatalyst(.v15),
     .tvOS(.v16),
     .visionOS(.v1),
