@@ -21,7 +21,7 @@ let package = Package(
   name: "WrkstrmFoundation",
   platforms: [
     .iOS(.v16),
-    .macOS(.v15),
+    .macOS(.v14),
     .macCatalyst(.v15),
     .tvOS(.v16),
     .visionOS(.v1),
@@ -33,8 +33,8 @@ let package = Package(
   dependencies: [
     localOrRemote(
       name: "common-log",
-      path: "../../../common/domain/system/common-log",
-      url: "https://github.com/wrkstrm/common-log.git",
+      path: "../../../../../../../swift-universal/public/spm/universal/domain/system/common-log",
+      url: "https://github.com/swift-universal/common-log.git",
       from: "3.0.0"),
     localOrRemote(
       name: "wrkstrm-main",
